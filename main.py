@@ -1,6 +1,6 @@
 def twoSum(nums, target: int):
-    prevMap = {} # val : index
-    for i, n in enumerate(nums):
+    prevMap = {}        # value : index
+    for i, n in enumerate(nums):        # i is the index of n, n is the value in nums
         diff = target - n
         if diff in prevMap:
             return [prevMap[diff], i]
